@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Admin | vBuy</title><link rel="stylesheet" href="styles.css"></head>
+<body data-page="admin">
+<header id="hdr"></header>
+<main class="wrap">
+<div id="gate" class="card narrow"><p class="muted">Checking admin access...</p></div>
+<div id="adminApp" hidden><h1>Admin dashboard</h1>
+<div class="stats" id="stats"></div>
+<div class="tabs"><button class="tab on" data-tab="products">Products</button><button class="tab" data-tab="categories">Categories</button><button class="tab" data-tab="customers">Customers</button><button class="tab" data-tab="orders">Orders</button><button class="tab" data-tab="reports">Reports</button></div>
+
+<section id="tab-products" class="pane"><div class="two"><form id="pForm" class="card" novalidate><h2 id="pFormTitle">Add product</h2>
+<p class="muted" id="pIdLine"></p><input type="hidden" name="id"><input type="hidden" name="imageUrl">
+<label>Title<input name="name" required></label>
+<label>Category<select name="catId" required></select></label>
+<label>Price<input name="price" type="number" min="1" step="0.01" required></label>
+<label>Qty (stock)<input name="stock" type="number" min="0" step="1" required></label>
+<label>Description<textarea name="description" rows="3" required></textarea></label>
+<label>Product image (JPG/PNG/WebP, max 2 MB)<input name="image" type="file" accept="image/*"></label>
+<img id="preview" class="preview" alt="" hidden>
+<div class="err" id="pErr"></div>
+<div class="row"><button class="btn" id="pSave" type="submit">Save product</button><button class="btn light" id="pCancel" type="button">Clear form</button></div></form>
+<div class="card"><div class="row between"><h2>Inventory</h2><button class="btn light small" id="importBtn" type="button">Import 12 sample products</button></div>
+<div class="row"><select id="fCat" style="width:auto"></select><input id="fQ" placeholder="Search title or ID" style="width:200px"></div>
+<div class="tablewrap"><table><thead><tr><th></th><th>ID</th><th>Title</th><th>Category</th><th>Price</th><th>Qty</th><th>Status</th><th></th></tr></thead><tbody id="pRows"></tbody></table></div>
+<div id="pPager" class="pager"></div></div></div></section>
+
+<section id="tab-categories" class="pane" hidden><div class="two"><form id="cForm" class="card" novalidate><h2 id="cFormTitle">Add category</h2>
+<input type="hidden" name="id"><p class="muted" id="cIdLine"></p>
+<label>Category name<input name="name" required></label><div class="err" id="cErr"></div>
+<div class="row"><button class="btn" type="submit">Save category</button><button class="btn light" id="cCancel" type="button">Clear form</button></div></form>
+<div class="card"><h2>All categories</h2><div class="tablewrap"><table><thead><tr><th>ID</th><th>Name</th><th>Products</th><th></th></tr></thead><tbody id="cRows"></tbody></table></div></div></div></section>
+
+<section id="tab-customers" class="pane" hidden><div class="card"><h2>Customers and credit limit</h2>
+<p class="muted">New customers start with a credit limit of 0. Type a limit and click Save. "Remove" sets it back to 0.</p>
+<div class="tablewrap"><table><thead><tr><th>Name</th><th>Email</th><th>Mobile</th><th>Credit limit</th><th>Unpaid credit</th><th></th></tr></thead><tbody id="uRows"></tbody></table></div></div></section>
+
+<section id="tab-orders" class="pane" hidden><div id="allOrders"></div></section>
+
+<section id="tab-reports" class="pane" hidden><div class="card"><h2>Reports</h2>
+<div class="row"><select id="rSel" style="width:auto;max-width:100%"></select>
+<label class="inl">From <input type="date" id="rFrom" style="width:auto"></label><label class="inl">To <input type="date" id="rTo" style="width:auto"></label>
+<button class="btn" id="rRun" type="button">Show report</button><button class="btn light" id="rCsv" type="button">Download CSV</button></div>
+<p class="muted" id="rNote"></p><div class="tablewrap" id="rOut"></div></div></section></div>
+</main>
+<footer id="ftr"></footer>
+<div id="toasts"></div>
+<script src="config.js"></script><script src="jquery.min.js"></script><script src="firebase.js"></script><script src="app.js"></script><script src="admin.js"></script>
+</body></html>

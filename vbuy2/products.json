@@ -1,0 +1,122 @@
+[
+  {
+    "id": "p1",
+    "name": "Wireless Headphones",
+    "price": 2499,
+    "description": "Over-ear Bluetooth headphones with deep bass and 30-hour battery life.",
+    "image": "images/p1.svg",
+    "stock": 120,
+    "catId": "electronics",
+    "active": true
+  },
+  {
+    "id": "p2",
+    "name": "Smart Watch",
+    "price": 3999,
+    "description": "Fitness smart watch with heart-rate tracking, sleep tracking and a bright display.",
+    "image": "images/p2.svg",
+    "stock": 40,
+    "catId": "electronics",
+    "active": true
+  },
+  {
+    "id": "p3",
+    "name": "Bluetooth Speaker",
+    "price": 1799,
+    "description": "Portable waterproof speaker with clear sound and 12 hours of play time.",
+    "image": "images/p3.svg",
+    "stock": 12,
+    "catId": "electronics",
+    "active": true
+  },
+  {
+    "id": "p4",
+    "name": "Laptop Backpack",
+    "price": 1299,
+    "description": "Strong water-resistant backpack with a padded laptop pocket and USB port.",
+    "image": "images/p4.svg",
+    "stock": 60,
+    "catId": "fashion",
+    "active": true
+  },
+  {
+    "id": "p5",
+    "name": "Running Shoes",
+    "price": 2199,
+    "description": "Light and comfortable running shoes with soft cushioning and strong grip.",
+    "image": "images/p5.svg",
+    "stock": 30,
+    "catId": "fashion",
+    "active": true
+  },
+  {
+    "id": "p6",
+    "name": "Sunglasses",
+    "price": 799,
+    "description": "UV-protected sunglasses with a light, strong frame for everyday use.",
+    "image": "images/p6.svg",
+    "stock": 200,
+    "catId": "fashion",
+    "active": true
+  },
+  {
+    "id": "p7",
+    "name": "Coffee Maker",
+    "price": 3299,
+    "description": "Automatic drip coffee maker that brews up to 6 cups in minutes.",
+    "image": "images/p7.svg",
+    "stock": 8,
+    "catId": "home",
+    "active": true
+  },
+  {
+    "id": "p8",
+    "name": "Table Lamp",
+    "price": 899,
+    "description": "Modern LED table lamp with three brightness levels and eye-care light.",
+    "image": "images/p8.svg",
+    "stock": 45,
+    "catId": "home",
+    "active": true
+  },
+  {
+    "id": "p9",
+    "name": "Cotton Bedsheet",
+    "price": 1099,
+    "description": "Soft 100% cotton double bedsheet with two pillow covers.",
+    "image": "images/p9.svg",
+    "stock": 15,
+    "catId": "home",
+    "active": true
+  },
+  {
+    "id": "p10",
+    "name": "The Silent Garden (Novel)",
+    "price": 349,
+    "description": "A calm and touching story about family, memory and a hidden garden.",
+    "image": "images/p10.svg",
+    "stock": 80,
+    "catId": "books",
+    "active": true
+  },
+  {
+    "id": "p11",
+    "name": "Yoga Mat",
+    "price": 699,
+    "description": "Non-slip 6 mm yoga mat that is thick, soft and easy to carry.",
+    "image": "images/p11.svg",
+    "stock": 25,
+    "catId": "sports",
+    "active": true
+  },
+  {
+    "id": "p12",
+    "name": "Cricket Bat",
+    "price": 1899,
+    "description": "Kashmir willow cricket bat with a comfortable grip for club players.",
+    "image": "images/p12.svg",
+    "stock": 100,
+    "catId": "sports",
+    "active": true
+  }
+]

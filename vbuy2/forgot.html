@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Reset password | vBuy</title><link rel="stylesheet" href="styles.css"></head>
+<body data-page="forgot">
+<header id="hdr"></header>
+<main class="wrap">
+<form id="forgotForm" class="card narrow" novalidate><h1>Reset password</h1>
+<p class="muted">Enter your email. Firebase will send you a link to choose a new password.</p>
+<label>Email<input name="email" type="email" autocomplete="email" required></label>
+<div class="err" id="formErr"></div><div class="ok" id="formOk"></div><button class="btn" type="submit">Send reset email</button>
+<p class="muted"><a href="login.html">Back to sign in</a></p></form>
+</main>
+<footer id="ftr"></footer>
+<div id="toasts"></div>
+<script src="config.js"></script><script src="jquery.min.js"></script><script src="firebase.js"></script><script src="app.js"></script>
+</body></html>

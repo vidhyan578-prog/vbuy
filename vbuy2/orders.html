@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>My Orders | vBuy</title><link rel="stylesheet" href="styles.css"></head>
+<body data-page="orders">
+<header id="hdr"></header>
+<main class="wrap">
+<div id="ordersApp" hidden>
+<section class="card"><h2>My profile</h2><form id="profForm" class="profile" novalidate>
+<label>Email<input name="email" disabled></label>
+<label>Full name<input name="fullName" required></label>
+<label>Mobile number<input name="mobile" type="tel"></label>
+<label>Delivery address<textarea name="address" rows="2"></textarea></label>
+<div class="err" id="profErr"></div><button class="btn" type="submit">Save profile</button></form>
+<p id="creditLine" class="muted"></p></section>
+<h2 style="margin-top:18px">Order history</h2><div id="orderList"><p class="muted">Loading...</p></div></div>
+</main>
+<footer id="ftr"></footer>
+<div id="toasts"></div>
+<script src="config.js"></script><script src="jquery.min.js"></script><script src="firebase.js"></script><script src="app.js"></script>
+</body></html>

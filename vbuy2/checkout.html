@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Checkout | vBuy</title><link rel="stylesheet" href="styles.css"></head>
+<body data-page="checkout">
+<header id="hdr"></header>
+<main class="wrap">
+<h1>Checkout</h1>
+<div class="two"><form id="coForm" class="card" novalidate><h2>Delivery details</h2>
+<label>Full name<input name="fullName" autocomplete="name" required></label><div class="err" data-for="fullName"></div>
+<label>Mobile number<input name="mobile" type="tel" autocomplete="tel" placeholder="10 digit mobile number" required></label><div class="err" data-for="mobile"></div>
+<label>Delivery address<textarea name="address" rows="3" autocomplete="street-address" placeholder="House no, street, city, state, PIN code" required></textarea></label><div class="err" data-for="address"></div>
+<fieldset class="pay"><legend>Payment method</legend>
+<label class="inl"><input type="radio" name="payment" value="Cash" checked> Cash on delivery</label><br>
+<label class="inl"><input type="radio" name="payment" value="Credit" id="payCredit"> Credit limit</label> <span id="creditInfo" class="muted"></span></fieldset>
+<div class="err" data-for="payment"></div>
+<button class="btn buy" id="placeBtn" type="submit">Place order</button></form>
+<div id="summary" class="card"></div></div>
+</main>
+<footer id="ftr"></footer>
+<div id="toasts"></div>
+<script src="config.js"></script><script src="jquery.min.js"></script><script src="firebase.js"></script><script src="app.js"></script>
+</body></html>

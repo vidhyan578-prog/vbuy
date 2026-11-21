@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Register | vBuy</title><link rel="stylesheet" href="styles.css"></head>
+<body data-page="register">
+<header id="hdr"></header>
+<main class="wrap">
+<form id="regForm" class="card narrow" novalidate><h1>Create account</h1>
+<label>Full name<input name="fullName" autocomplete="name" required></label>
+<label>Email<input name="email" type="email" autocomplete="email" required></label>
+<label>Mobile number<input name="mobile" type="tel" autocomplete="tel" placeholder="10 digit mobile number" required></label>
+<label>Password (at least 6 characters)<input name="password" type="password" autocomplete="new-password" required></label>
+<label>Confirm password<input name="confirm" type="password" autocomplete="new-password" required></label>
+<div class="err" id="formErr"></div><button class="btn" type="submit">Create account</button>
+<p class="muted">Already have an account? <a href="login.html">Sign in</a></p></form>
+</main>
+<footer id="ftr"></footer>
+<div id="toasts"></div>
+<script src="config.js"></script><script src="jquery.min.js"></script><script src="firebase.js"></script><script src="app.js"></script>
+</body></html>
